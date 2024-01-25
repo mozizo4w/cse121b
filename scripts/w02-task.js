@@ -24,12 +24,13 @@ imageElement.setAttribute('alt', altText);
 
 /* Step 5 - Array */
 const favoriteFoods = ['Bean', 'Fruits', 'Vegetables', 'Yam', 'Fish', 'Corn', 'Eggs'];
-foodElement.textContent = `My Favorite Foods: ${favoriteFoods.join(', ')}`;
+foodElement.textContent = `${favoriteFoods}`;
 const favoriteFood = "Rice";
 favoriteFoods.push(favoriteFood);
-foodElement.innerHTML += `<br>${favoriteFoods.join("<br>")}`;
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.shift();
-foodElement.innerHTML += `<br>${favoriteFoods.join("<br>")}`;
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 favoriteFoods.pop();
-foodElement.innerHTML += `<br>${favoriteFoods.join("<br>")}`;
+foodElement.innerHTML += `<br>${favoriteFoods}`;
+
 
